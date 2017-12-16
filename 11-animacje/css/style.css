@@ -1,0 +1,24 @@
+.rotate img:hover {
+transform: rotate(20deg);
+    
+}
+
+.scale img:hover{
+    transform: scale(1.5);
+}
+@keyframes resize{
+    0%,100%{
+        width:50%;
+    }
+    25%,75%{
+       width:30%;
+    }
+    50%{
+        width:10%;
+    }
+}
+.resize img{
+    animation-name: resize;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
